@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
          fetch-depth: 0
-
+        
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
@@ -26,7 +26,7 @@ jobs:
 
       - name: Instalando dependências
         working-directory: prog-trabalho-final
-        run: yarn
+        run: yarn install
 
       - name: Instalando Playwright
         working-directory: prog-trabalho-final
