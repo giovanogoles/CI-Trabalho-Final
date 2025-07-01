@@ -21,13 +21,12 @@ jobs:
         with:
           node-version: 22.x
 
-      - name: Instalando dependências
-        #working-directory: prog-trabalho-final/testes
-        run: cd prog-trabalho-final/testes
-             yarn install
-
       - name: Instalando Yarn
         run: npm install -g yarn
+
+      - name: Instalando dependências
+        working-directory: prog-trabalho-final/testes
+        run: yarn install
 
       - name: Instalando Playwright
         working-directory: prog-trabalho-final/testes
