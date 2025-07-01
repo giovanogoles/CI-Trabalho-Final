@@ -25,13 +25,13 @@ jobs:
         run: npm install -g yarn
 
       - name: Instalando dependências
-        working-directory: prog-trabalho-final
+        working-directory: ./prog-trabalho-final
         run: yarn install
 
       - name: Instalando Playwright
-        working-directory: prog-trabalho-final
+        working-directory: ./prog-trabalho-final
         run: yarn playwright install
 
       - name: Executando Testes E2E
-        working-directory: prog-trabalho-final
+        working-directory: ./prog-trabalho-final
         run: yarn run e2e
